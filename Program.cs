@@ -1,6 +1,4 @@
 ﻿using WorldMachine.Core.Configuration;
-using Discord.WebSocket;
-using Discord; 
 
 class Programm
 {
