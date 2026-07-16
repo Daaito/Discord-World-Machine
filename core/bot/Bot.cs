@@ -21,8 +21,7 @@ public class Bot
     //Load modules and start bot 
     public async Task StartAsync()
     {
-        await _moduleLoader.LoadModulesAsync(_client);
-
+        await _moduleLoader.LoadModulesAsync(_client, _settings);
 
         //Start bot after loading modules
         await _client.LoginAsync(TokenType.Bot,_settings.DiscordToken);
