@@ -2,9 +2,8 @@ using Discord;
 using Discord.WebSocket;
 public class LoggingModule : IBotModule
 {
-
     public string Name => "Logging";
-    public Task InitializeAsync(DiscordSocketClient client)
+    public Task InitializeAsync(DiscordSocketClient client,WorldMachine.Core.Configuration.BotSettings settings)
     {
         //Bots Internal Logs
         client.Log += Log;
