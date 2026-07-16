@@ -11,7 +11,7 @@ public class ModuleLoader
     }
 
 
-    public async Task LoadModulesAsync(DiscordSocketClient client)
+    public async Task LoadModulesAsync(DiscordSocketClient client, WorldMachine.Core.Configuration.BotSettings settings)
     {
         /*
         add future modules manually
@@ -24,7 +24,7 @@ public class ModuleLoader
         {
             Console.WriteLine($"Loading module: {module.Name}");
 
-            await module.InitializeAsync(client);
+            await module.InitializeAsync(client, settings);
         }
     }
 }
