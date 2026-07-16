@@ -13,7 +13,7 @@ public class Bot
     {
         _settings = settings;
 
-        _client = new DiscordSocketClient(new DiscordSocketConfig{LogLevel = LogSeverity.Info});
+        _client = new DiscordSocketClient(new DiscordSocketConfig{GatewayIntents = GatewayIntents.Guilds | GatewayIntents.GuildMembers | GatewayIntents.GuildMessages | GatewayIntents.MessageContent});
 
         _moduleLoader = new ModuleLoader();
     }
