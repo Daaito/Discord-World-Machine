@@ -3,6 +3,7 @@
 
 # Cat are Amazing
 core/env/*
+!core/env/AppsettingsExample.json
 
 
 # User-specific files
