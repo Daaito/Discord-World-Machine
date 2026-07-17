@@ -69,4 +69,6 @@ public class LoggingModule : IBotModule
 
         return Task.CompletedTask;
     }
+
+    //Any more ideas for things that need to be logged?
 }
